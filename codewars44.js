@@ -1,9 +1,11 @@
-function checkAlive (health) {
-  if(health <= 0) {
-
-    return false
-  }
-  else {
-    return true
-  }
+function getAverage(marks){
+//   let avg = marks
+  var grade = 0;
+  for(var i = 0; i < marks.length; i++) {
+  grade+=marks[i]
+}
+  
+  var getGrade = (grade / marks.length);
+  return Math.floor(getGrade)
+  console.log(getGrade)
 }
