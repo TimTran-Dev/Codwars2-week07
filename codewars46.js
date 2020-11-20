@@ -1,4 +1,9 @@
-function greet(name){
-  let string = `Hello, ${name} how are you doing today?`
-  return string
+const arr = N => {
+  let newArr = []
+  if(typeof N === "number"){
+    for(let i = 0; i < N; i++){
+      newArr.push(i)
+    }
+  }
+  return newArr
 }
